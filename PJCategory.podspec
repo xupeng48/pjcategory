@@ -14,7 +14,11 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.public_header_files = 'Source/Class/*.h'
-  s.source_files = 'Source/Class/*.h'
+  s.source_files = [
+    'Source/Class/*.h',
+    'Source/Class/Foundation/*.{h,m}',
+    'Source/Class/UIKit/*.{h,m}'
+  ]
 
   s.subspec 'Foundation' do |sf|
     sf.source_files = 'Source/Class/Foundation/*.{h,m}'
@@ -22,7 +26,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'UIKit' do |su|
     su.source_files = 'Source/Class/UIKit/*.{h,m}'
-    su.dependency "PJCategory/Foundation"
   end
 
 end
