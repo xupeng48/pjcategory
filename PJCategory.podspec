@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'UIKit' do |su|
-    sf.public_header_files = 'Source/Class/*.h'
+    su.public_header_files = 'Source/Class/*.h'
     su.source_files = 'Source/Class/UIKit/*.{h,m}'
   end
 
