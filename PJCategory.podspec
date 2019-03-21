@@ -25,7 +25,12 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'UIKit' do |su|
-    su.source_files = 'Source/Class/UIKit/*.{h,m}'
+    su.source_files = [
+      'Source/Class/*.h',
+      'Source/Class/Foundation/*.{h,m}',
+      'Source/Class/UIKit/*.{h,m}'
+   ]
+
   end
 
 end
