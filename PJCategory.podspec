@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'UIKit' do |su|
     su.source_files = 'Source/Class/UIKit/*.{h,m}'
+    su.dependency "PJCategory/Foundation"
   end
 
 end
