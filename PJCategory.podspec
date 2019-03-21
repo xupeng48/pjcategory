@@ -13,13 +13,15 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Source/Class/*.{h,m}'
+  s.source_files = 'Source/Class/*.h'
 
   s.subspec 'Foundation' do |sf|
+    sf.public_header_files = 'Source/Class/*.h'
     sf.source_files = 'Source/Class/Foundation/*.{h,m}'
   end
 
   s.subspec 'UIKit' do |su|
+    sf.public_header_files = 'Source/Class/*.h'
     su.source_files = 'Source/Class/UIKit/*.{h,m}'
   end
 
