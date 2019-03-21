@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PJCategory'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'PJCategory'
   s.description      = <<-DESC
 	                      some Category for iOS
@@ -13,11 +13,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
 
-  s.source_files = [
-    'Source/Class/*.{h,m}',
-    'Source/Class/UIKit/*.{h,m}',
-    'Source/Class/Foundation/*.{h,m}'
-  ]
+  s.source_files = 'Source/Class/**/*'
 
 end
 
